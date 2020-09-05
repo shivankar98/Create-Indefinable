@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Indefinable</title>
+    <link rel="stylesheet" href="styles/stylehome.css">
+    <link rel="stylesheet" href="styles/lightbox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Lobster&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans+Caption:wght@700&family=Satisfy&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans+Caption:wght@700&family=Patrick+Hand&family=Satisfy&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=PT+Sans+Caption:wght@700&family=Patrick+Hand&family=Satisfy&display=swap" rel="stylesheet"> -->
+    <!-- <script src="/javascript/script.js"></script> -->
+    <script src="javascript/homeScript.js"></script>
+    <script src="javascript/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="authorName">
+            <h3>
+                Vashishtha Brothers creation
+            </h3>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn" onclick="pageDown()">
+            <i class="fas fa-ellipsis-v"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="index.html" class="homeNav" onmouseover="homeHover()" onmouseout="hoverend()" onclick="unchk();pageup()"> Home </a>
+            <a href="index.html#album" class="albumNav" onmouseover="albumHover()" onmouseout="hoverend()" onclick="unchk();pageup()"> Albums </a>
+            <!-- <a href="#" class="activityNav" onmouseover="activityHover()" onmouseout="hoverend()" onclick="unchk()"> Activities </a>  -->
+            <a href="index.html#connectBtn" class="aboutNav" onmouseover="aboutHover()" onmouseout="hoverend()" onclick="unchk();pageup()"> About </a>
+            <label for="chk" class="hide-menu-btn" onclick="pageup()">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+
+
+    </nav>
+
+    <!-- <nav>
+        <ul data-aos="fade-up">
+            <li><a href="index.html" class="homeNav" onmouseover="homeHover()" onmouseout="hoverend()"> Home </a></li>
+            <li><a href="#album" class="albumNav" onmouseover="albumHover()" onmouseout="hoverend()"> Albums </a></li>
+            <li><a href="#" class="activityNav" onmouseover="activityHover()" onmouseout="hoverend()"> Activities </a></li>
+            <li><a href="#digital" class="aboutNav" onmouseover="aboutHover()" onmouseout="hoverend()"> About </a></li>
+            </ul>
+    </nav> -->
+
+    <div class="wholePage">
+
+    <div class="albumImg" data-aos="zoom-in">
+        <div class="animImg"><a href="Animation/1.jpg" data-lightbox="mygallery"><img src="Animation/1.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/2.jpg" data-lightbox="mygallery"><img src="Animation/2.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/3.jpg" data-lightbox="mygallery"><img src="Animation/3.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/4.jpg" data-lightbox="mygallery"><img src="Animation/4.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/5.jpg" data-lightbox="mygallery"><img src="Animation/6.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/7.jpg" data-lightbox="mygallery"><img src="Animation/7.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/8.jpg" data-lightbox="mygallery"><img src="Animation/8.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/9.jpg" data-lightbox="mygallery"><img src="Animation/9.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/10.jpg" data-lightbox="mygallery"><img src="Animation/10.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/11.jpg" data-lightbox="mygallery"><img src="Animation/11.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/12.jpg" data-lightbox="mygallery"><img src="Animation/12.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/13.jpg" data-lightbox="mygallery"><img src="Animation/13.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/14.jpg" data-lightbox="mygallery"><img src="Animation/14.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/15.jpg" data-lightbox="mygallery"><img src="Animation/15.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/16.jpg" data-lightbox="mygallery"><img src="Animation/16.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/17.jpg" data-lightbox="mygallery"><img src="Animation/17.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/18.jpg" data-lightbox="mygallery"><img src="Animation/18.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/19.jpg" data-lightbox="mygallery"><img src="Animation/19.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/20.jpg" data-lightbox="mygallery"><img src="Animation/20.jpg" alt=""></a></div>
+        <div class="animImg"><a href="Animation/21.jpg" data-lightbox="mygallery"><img src="Animation/21.jpg" alt=""></a></div>
+
+
+
+    </div>
+
+
+
+<footer>
+    <p>All original art work by Puru Vashishtha & Shantanu Vashishtha &copy;</p>
+    <p>Website designed and developed by Shivankar Vaish</p>
+</footer>
+</div>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'disableScrolling':true
+    })
+</script>
+
+</body>
+</html>
